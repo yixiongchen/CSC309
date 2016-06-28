@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Packages</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>{{packages.length}} package(s)</h1>
+      {{#each packages}}
+      <ul>
+        <li>Shipper: {{this.shipper_name}}</li>
+        <li>Receiver: {{this.receiver_name}}</li>
+        <li>Desintation: {{this.destination_address}}</li>
+        <li>Sent on: {{this.sent_on}}</li>
+        <li>Due on: {{this.due_on}}</li>
+        <li>Received on: {{this.received_on}}</li>
+      </ul>
+      {{/each}}
+    </main>
+  </body>
+</html> 
